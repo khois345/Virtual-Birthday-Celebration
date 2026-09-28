@@ -87,4 +87,4 @@ This project was inspired by Tru Narla (mewtru) and the original birthday cake c
 
 ## License
 
-This project is open source. If you use or modify it, please keep the original credits and follow the terms of the repository license once one is added.
+This project is licensed under the [MIT License](LICENSE). If you use or modify it, please keep the original credits.
