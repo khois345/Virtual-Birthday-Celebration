@@ -27,6 +27,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "Happy Birthday!",
       sessionMissing: "Session not found or has expired. Please check the link or create a new session.",
+      sharePreviewTitle: "Someone made something just for you 💌",
+      sharePreviewDescription: "Open it when you have a moment. No tricks, just something from someone who cares about you 💛",
     },
     actions: {
       shareLabel: "Share this celebration:",
@@ -77,6 +79,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "Chúc mừng sinh nhật!",
       sessionMissing: "Không tìm thấy phiên hoặc phiên đã hết hạn. Vui lòng kiểm tra liên kết hoặc tạo phiên mới.",
+      sharePreviewTitle: "Bạn đã nhận được một món quà đặc biệt 💌",
+      sharePreviewDescription: "Hãy mở ra khi bạn có chút thời gian nhé. Không có gì phải lo cả, chỉ là một chút tâm ý từ một người luôn quan tâm đến bạn 💛",
     },
     actions: {
       shareLabel: "Chia sẻ buổi chúc mừng này:",
@@ -127,6 +131,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "生日快乐！",
       sessionMissing: "未找到会话或会话已过期。请检查链接或创建新会话。",
+      sharePreviewTitle: "有人特别为你准备了一份心意 💌",
+      sharePreviewDescription: "有空时打开看看吧。放心，不是什么套路，只是一个关心你的人送来的一份心意 💛",
     },
     actions: {
       shareLabel: "分享这个庆祝链接：",
@@ -177,6 +183,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "생일 축하해요!",
       sessionMissing: "세션을 찾을 수 없거나 만료되었습니다. 링크를 확인하거나 새 세션을 만들어 주세요.",
+      sharePreviewTitle: "누군가 당신만을 위해 준비했어요 💌",
+      sharePreviewDescription: "시간 날 때 열어 보세요. 이상한 거 아니에요, 당신을 아끼는 누군가가 보낸 마음이에요 💛",
     },
     actions: {
       shareLabel: "이 축하 링크 공유:",
@@ -227,6 +235,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "お誕生日おめでとう！",
       sessionMissing: "セッションが見つからないか、有効期限が切れています。リンクを確認するか新しいセッションを作成してください。",
+      sharePreviewTitle: "あなただけのために用意されたものが届いています 💌",
+      sharePreviewDescription: "時間のあるときに開いてみてください。怪しいものではありません。あなたを大切に思う人からの贈りものです 💛",
     },
     actions: {
       shareLabel: "このお祝いリンクを共有：",
@@ -277,6 +287,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "¡Feliz cumpleaños!",
       sessionMissing: "No se encontró la sesión o ha expirado. Verifica el enlace o crea una nueva sesión.",
+      sharePreviewTitle: "Alguien preparó algo solo para ti 💌",
+      sharePreviewDescription: "Ábrelo cuando tengas un momento. Sin trucos, solo algo de alguien que se preocupa por ti 💛",
     },
     actions: {
       shareLabel: "Comparte esta celebración:",
@@ -325,6 +337,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "Selamat Hari Jadi!",
       sessionMissing: "Sesi tidak ditemukan atau telah kedaluwarsa. Silakan periksa tautan atau buat sesi baru.",
+      sharePreviewTitle: "Seseorang membuat sesuatu khusus untukmu 💌",
+      sharePreviewDescription: "Buka saat kamu punya waktu, ya. Bukan tipuan, hanya sesuatu dari seseorang yang peduli padamu 💛",
     },
     actions: {
       shareLabel: "Bagikan perayaan ini:",
@@ -375,6 +389,8 @@ export const localePacks = {
     celebration: {
       happyBirthday: "สุขสวัสดีวันเกิด!",
       sessionMissing: "ไม่พบเซสชันหรือเซสชันหมดอายุแล้ว โปรดตรวจสอบลิงก์หรือสร้างเซสชันใหม่",
+      sharePreviewTitle: "มีคนทำสิ่งนี้ไว้ให้คุณโดยเฉพาะ 💌",
+      sharePreviewDescription: "เปิดดูเมื่อคุณมีเวลานะ ไม่ได้มีอะไรแอบแฝง แค่สิ่งเล็ก ๆ จากคนที่ห่วงใยคุณ 💛",
     },
     actions: {
       shareLabel: "แบ่งปันการเฉลิมฉลองนี้:",
