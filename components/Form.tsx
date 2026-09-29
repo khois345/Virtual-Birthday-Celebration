@@ -150,9 +150,9 @@ const Form = ({ locale }: FormProps) => {
   }, [showEmojiPicker]);
 
   const steps = [
-    { icon: "✍️", text: texts.form.stepCreate },
-    { icon: "🔗", text: texts.form.stepShare },
-    { icon: "🕯️", text: texts.form.stepCelebrate },
+    { icon: "fa-pen", text: texts.form.stepCreate },
+    { icon: "fa-link", text: texts.form.stepShare },
+    { icon: "fa-cake-candles", text: texts.form.stepCelebrate },
   ];
 
   return (
@@ -160,22 +160,22 @@ const Form = ({ locale }: FormProps) => {
       {/* Intro */}
       <section className="w-full max-w-2xl text-center">
         <h1 className="text-3xl sm:text-4xl font-bold text-white">{texts.form.heroTitle}</h1>
-        <p className="mt-3 text-neutral-300 sm:text-lg">{texts.form.heroSubtitle}</p>
+        <p className="mx-auto mt-3 max-w-2xl text-neutral-300 sm:text-lg">{texts.form.heroSubtitle}</p>
 
         <h2 className="sr-only">{texts.form.howItWorks}</h2>
-        <ol className="mt-6 grid gap-3 sm:grid-cols-3 text-left">
+        <ol className="mt-6 grid gap-2 sm:grid-cols-3 sm:gap-3 text-left sm:text-center">
           {steps.map((step, index) => (
             <li
               key={index}
-              className="flex items-start gap-3 rounded-lg bg-neutral-700/60 border border-neutral-600 p-3"
+              className="flex items-center gap-3 rounded-lg bg-neutral-700/60 border border-neutral-600 px-3 py-2.5 sm:flex-col sm:gap-2 sm:px-4 sm:py-4"
             >
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange-800 text-sm font-bold text-white">
-                {index + 1}
+              <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-800/30 text-sm text-orange-300">
+                <i className={`fa-solid ${step.icon}`} aria-hidden="true" />
+                <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-orange-800 text-[10px] font-bold text-white">
+                  {index + 1}
+                </span>
               </span>
-              <span className="text-sm text-neutral-200">
-                <span aria-hidden className="mr-1">{step.icon}</span>
-                {step.text}
-              </span>
+              <span className="text-xs sm:text-[13px] leading-snug text-neutral-200">{step.text}</span>
             </li>
           ))}
         </ol>
@@ -218,23 +218,9 @@ const Form = ({ locale }: FormProps) => {
                 onMouseUp={handleInteractionEnd}
                 onTouchEnd={handleInteractionEnd}
                 onMouseLeave={handleInteractionEnd}
-                className="bg-gray-600 hover:bg-gray-500 border rounded-l-lg p-3 h-9 leading-tight focus:outline-none "
+                className="flex h-9 items-center justify-center bg-gray-600 hover:bg-gray-500 border rounded-l-lg px-3 focus:outline-none"
               >
-                <svg
-                  className="w-3 h-3 text-gray-900 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 18 2"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 1h16"
-                  />
-                </svg>
+                <i className="fa-solid fa-minus text-xs text-white" aria-hidden="true" />
               </button>
               <input
                 type="number"
@@ -252,23 +238,9 @@ const Form = ({ locale }: FormProps) => {
                 onMouseUp={handleInteractionEnd}
                 onTouchEnd={handleInteractionEnd}
                 onMouseLeave={handleInteractionEnd}
-                className="bg-gray-600 hover:bg-gray-500 border rounded-e-lg p-3 h-9 leading-tight outline-none"
+                className="flex h-9 items-center justify-center bg-gray-600 hover:bg-gray-500 border rounded-e-lg px-3 outline-none"
               >
-                <svg
-                  className="w-3 h-3 text-gray-900 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 18 18"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 1v16M1 9h16"
-                  />
-                </svg>
+                <i className="fa-solid fa-plus text-xs text-white" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -286,7 +258,7 @@ const Form = ({ locale }: FormProps) => {
                 maxLength={100}
                 placeholder={texts.form.regardPlaceholder}
                 rows={3}
-                className="shadow appearance-none rounded w-full py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none rounded w-full py-2 pl-3 pr-12 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
 
               <button
@@ -294,9 +266,9 @@ const Form = ({ locale }: FormProps) => {
                 type="button"
                 aria-label="Add emoji"
                 onClick={() => setShowEmojiPicker((s) => !s)}
-                className="absolute right-2 bottom-2 bg-neutral-600 hover:bg-neutral-500 text-white rounded-full p-2"
+                className="absolute right-2 bottom-2 flex h-8 w-8 items-center justify-center bg-neutral-600 hover:bg-neutral-500 text-white rounded-full"
               >
-                <span aria-hidden>😊</span>
+                <i className="fa-regular fa-face-smile" aria-hidden="true" />
               </button>
 
               {/* Emoji picker */}
@@ -348,7 +320,7 @@ const Form = ({ locale }: FormProps) => {
             </button>
           </div>
           <p className="mt-4 text-center text-xs text-neutral-400">
-            <span aria-hidden>🔒 </span>
+            <i className="fa-solid fa-lock mr-1.5" aria-hidden="true" />
             {texts.form.privacyNote}
           </p>
         </form>

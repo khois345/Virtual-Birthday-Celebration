@@ -13,7 +13,7 @@ export const localePacks = {
       heroSubtitle: "Create an animated birthday cake for someone special, then send them the link. They get to blow out the candles!",
       howItWorks: "How it works",
       stepCreate: "Fill in their name, age, and a message",
-      stepShare: "Copy the link and send it to them",
+      stepShare: "Get your own custom link and send it to them. The link stays active for 3 days",
       stepCelebrate: "They blow out the candles by tapping or blowing into the mic",
       privacyNote: "Only people with the link can see the card.",
       title: "Enter the details of the birthday person",
@@ -46,6 +46,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "Click to Blow Candles",
+      blowIntoMic: "or blow into your microphone",
       microphoneDenied: "Please allow microphone access for the full experience",
     },
     footer: {
@@ -72,7 +73,7 @@ export const localePacks = {
       heroSubtitle: "Tạo một chiếc bánh sinh nhật hoạt hình cho người đặc biệt, rồi gửi đường liên kết cho họ. Họ sẽ được tự tay thổi nến!",
       howItWorks: "Cách hoạt động",
       stepCreate: "Nhập tên, tuổi và lời chúc",
-      stepShare: "Sao chép liên kết và gửi cho họ",
+      stepShare: "Nhận đường liên kết riêng và gửi cho họ. Liên kết có hiệu lực trong 3 ngày",
       stepCelebrate: "Họ thổi nến bằng cách chạm hoặc thổi vào micro",
       privacyNote: "Chỉ những người có liên kết mới xem được thiệp.",
       title: "Vui lòng nhập thông tin của người được chúc",
@@ -105,6 +106,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "Bấm để thổi nến",
+      blowIntoMic: "hoặc thổi vào micro của bạn",
       microphoneDenied: "Vui lòng cấp quyền microphone để có trải nghiệm đầy đủ",
     },
     footer: {
@@ -131,7 +133,7 @@ export const localePacks = {
       heroSubtitle: "为特别的人制作一个动画生日蛋糕，然后把链接发给 TA。TA 可以亲自吹灭蜡烛！",
       howItWorks: "使用方法",
       stepCreate: "填写 TA 的名字、年龄和祝福",
-      stepShare: "复制链接并发送给 TA",
+      stepShare: "获得专属链接并发送给 TA。链接有效期为 3 天",
       stepCelebrate: "TA 可以点击或对着麦克风吹灭蜡烛",
       privacyNote: "只有拿到链接的人才能看到这张贺卡。",
       title: "请输入生日主角的信息",
@@ -164,6 +166,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "点击吹灭蜡烛",
+      blowIntoMic: "或对着麦克风吹气",
       microphoneDenied: "请允许麦克风权限以获得完整体验",
     },
     footer: {
@@ -190,7 +193,7 @@ export const localePacks = {
       heroSubtitle: "특별한 사람을 위한 움직이는 생일 케이크를 만들고 링크를 보내 주세요. 직접 촛불을 끌 수 있어요!",
       howItWorks: "이용 방법",
       stepCreate: "이름, 나이, 메시지를 입력하세요",
-      stepShare: "링크를 복사해서 보내 주세요",
+      stepShare: "나만의 링크를 받아 보내 주세요. 링크는 3일 동안 유효해요",
       stepCelebrate: "받는 사람이 탭하거나 마이크에 바람을 불어 촛불을 꺼요",
       privacyNote: "링크가 있는 사람만 카드를 볼 수 있어요.",
       title: "생일 주인공의 정보를 입력해 주세요",
@@ -223,6 +226,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "클릭해서 촛불 끄기",
+      blowIntoMic: "또는 마이크에 바람을 불어 보세요",
       microphoneDenied: "전체 기능을 위해 마이크 권한을 허용해 주세요",
     },
     footer: {
@@ -249,7 +253,7 @@ export const localePacks = {
       heroSubtitle: "大切な人のためにアニメーションのバースデーケーキを作って、リンクを送りましょう。相手はろうそくを吹き消せます！",
       howItWorks: "使い方",
       stepCreate: "名前・年齢・メッセージを入力",
-      stepShare: "リンクをコピーして相手に送る",
+      stepShare: "専用リンクを受け取って相手に送る。リンクの有効期限は3日間です",
       stepCelebrate: "タップかマイクに息を吹きかけて、ろうそくを消してもらう",
       privacyNote: "カードはリンクを知っている人だけが見られます。",
       title: "お祝いする人の情報を入力してください",
@@ -282,6 +286,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "クリックしてろうそくを消す",
+      blowIntoMic: "またはマイクに息を吹きかけてね",
       microphoneDenied: "全機能を利用するにはマイクの許可が必要です",
     },
     footer: {
@@ -308,7 +313,7 @@ export const localePacks = {
       heroSubtitle: "Crea un pastel de cumpleaños animado para alguien especial y envíale el enlace. ¡Podrá soplar las velas!",
       howItWorks: "Cómo funciona",
       stepCreate: "Escribe su nombre, edad y un mensaje",
-      stepShare: "Copia el enlace y envíaselo",
+      stepShare: "Obtén tu enlace personalizado y envíaselo. El enlace estará activo durante 3 días",
       stepCelebrate: "Podrá soplar las velas tocando la pantalla o soplando al micrófono",
       privacyNote: "Solo quienes tengan el enlace pueden ver la tarjeta.",
       title: "Ingresa los datos de la persona que cumple años",
@@ -341,6 +346,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "Haz clic para soplar las velas",
+      blowIntoMic: "o sopla al micrófono",
       microphoneDenied: "Permite el acceso al micrófono para disfrutar la experiencia completa",
     },
     footer: {
@@ -367,7 +373,7 @@ export const localePacks = {
       heroSubtitle: "Buat kue ulang tahun animasi untuk seseorang yang spesial, lalu kirimkan tautannya. Mereka bisa meniup lilinnya sendiri!",
       howItWorks: "Cara kerjanya",
       stepCreate: "Isi nama, usia, dan pesan",
-      stepShare: "Salin tautan dan kirimkan kepadanya",
+      stepShare: "Dapatkan tautan khusus dan kirimkan kepadanya. Tautan berlaku selama 3 hari",
       stepCelebrate: "Dia meniup lilin dengan mengetuk layar atau meniup ke mikrofon",
       privacyNote: "Hanya orang yang memiliki tautan yang bisa melihat kartu ini.",
       title: "Masukkan detail orang yang berulang tahun",
@@ -400,6 +406,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "Klik untuk meniup lilin",
+      blowIntoMic: "atau tiup ke mikrofonmu",
       microphoneDenied: "Izinkan akses mikrofon untuk pengalaman lengkap",
     },
     footer: {
@@ -426,7 +433,7 @@ export const localePacks = {
       heroSubtitle: "สร้างเค้กวันเกิดแบบเคลื่อนไหวให้คนพิเศษ แล้วส่งลิงก์ให้เขา เขาจะได้เป่าเทียนเอง!",
       howItWorks: "วิธีใช้งาน",
       stepCreate: "ใส่ชื่อ อายุ และข้อความอวยพร",
-      stepShare: "คัดลอกลิงก์แล้วส่งให้เขา",
+      stepShare: "รับลิงก์เฉพาะของคุณแล้วส่งให้เขา ลิงก์ใช้งานได้ 3 วัน",
       stepCelebrate: "เขาเป่าเทียนได้ด้วยการแตะหรือเป่าที่ไมโครโฟน",
       privacyNote: "เฉพาะคนที่มีลิงก์เท่านั้นที่จะเห็นการ์ดนี้",
       title: "กรุณาใส่ข้อมูลของคนที่มีวันเกิด",
@@ -459,6 +466,7 @@ export const localePacks = {
     },
     cake: {
       blowCandles: "คลิกเพื่อเป่าเทียน",
+      blowIntoMic: "หรือเป่าที่ไมโครโฟนของคุณ",
       microphoneDenied: "โปรดอนุญาตการเข้าถึงไมโครโฟนเพื่อประสบการณ์ที่สมบูรณ์",
     },
     footer: {
