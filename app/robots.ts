@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://withwarmwishes.com/sitemap.xml",
+    sitemap: "https://www.withwarmwishes.com/sitemap.xml",
   };
 }
