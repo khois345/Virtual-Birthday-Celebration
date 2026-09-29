@@ -149,14 +149,44 @@ const Form = ({ locale }: FormProps) => {
     };
   }, [showEmojiPicker]);
 
+  const steps = [
+    { icon: "✍️", text: texts.form.stepCreate },
+    { icon: "🔗", text: texts.form.stepShare },
+    { icon: "🕯️", text: texts.form.stepCelebrate },
+  ];
+
   return (
-    <div className="flex justify-center pt-8">
-      <div className="w-full max-w-xs">
+    <div className="flex flex-col items-center px-4 pt-10 sm:pt-16">
+      {/* Intro */}
+      <section className="w-full max-w-2xl text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white">{texts.form.heroTitle}</h1>
+        <p className="mt-3 text-neutral-300 sm:text-lg">{texts.form.heroSubtitle}</p>
+
+        <h2 className="sr-only">{texts.form.howItWorks}</h2>
+        <ol className="mt-6 grid gap-3 sm:grid-cols-3 text-left">
+          {steps.map((step, index) => (
+            <li
+              key={index}
+              className="flex items-start gap-3 rounded-lg bg-neutral-700/60 border border-neutral-600 p-3"
+            >
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange-800 text-sm font-bold text-white">
+                {index + 1}
+              </span>
+              <span className="text-sm text-neutral-200">
+                <span aria-hidden className="mr-1">{step.icon}</span>
+                {step.text}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <div className="w-full max-w-sm mt-8">
         <form
           onSubmit={handleSubmit}
-          className="text-neutral-300 pl-5 pr-5 pt-8 pb-8 mb-4 rounded-lg shadow-full bg-neutral-700"
+          className="text-neutral-300 px-6 pt-8 pb-8 mb-4 rounded-xl shadow-full bg-neutral-700 border-t-4 border-orange-800"
         >
-          <h2 className="text-lg font-bold mb-2 text-center">{texts.form.title}</h2>
+          <h2 className="text-lg font-bold mb-4 text-center">{texts.form.title}</h2>
           
           {/* Name session */}
           <div className="mb-2">
@@ -317,6 +347,10 @@ const Form = ({ locale }: FormProps) => {
               )}
             </button>
           </div>
+          <p className="mt-4 text-center text-xs text-neutral-400">
+            <span aria-hidden>🔒 </span>
+            {texts.form.privacyNote}
+          </p>
         </form>
       </div>
     </div>
