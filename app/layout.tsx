@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const BASE_URL = "https://withwarmwishes.com";
+const BASE_URL = "https://www.withwarmwishes.com";
 
 export const metadata: Metadata = {
   title: "Happy Birthday! 🎉🎂🎈",
