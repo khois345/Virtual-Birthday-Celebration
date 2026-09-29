@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://birthday-celebration-olive.vercel.app";
+const BASE_URL = "https://withwarmwishes.com";
 const locales = ["es", "ja", "ko", "vi", "zh", "id", "th"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
