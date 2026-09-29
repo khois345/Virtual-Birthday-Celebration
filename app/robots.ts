@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://birthday-celebration-olive.vercel.app/sitemap.xml",
+    sitemap: "https://withwarmwishes.com/sitemap.xml",
   };
 }
