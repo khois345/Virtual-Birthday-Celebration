@@ -235,7 +235,7 @@ const BirthdayCake = ({ cakeColors, locale }: BirthdayCakeProps) => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-30">
+      <div className="flex flex-col items-center gap-3 mt-30 px-4">
           <button
           type="button"
           onClick={() => blowOutAllCandles()}
@@ -243,6 +243,10 @@ const BirthdayCake = ({ cakeColors, locale }: BirthdayCakeProps) => {
         >
             {texts.cake.blowCandles}
         </button>
+        <p className="flex items-center gap-1.5 text-sm text-neutral-400">
+          <i className="fa-solid fa-microphone animate-pulse text-orange-300" aria-hidden="true" />
+          {texts.cake.blowIntoMic}
+        </p>
       </div>
     </>
   );
