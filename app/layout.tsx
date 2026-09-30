@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 const BASE_URL = "https://www.withwarmwishes.com";
 
 export const metadata: Metadata = {
-  title: "Happy Birthday! 🎉🎂🎈",
+  title: "Animated Birthday Cake Card Maker | With Warm Wishes",
   description:
     "Celebrate birthdays virtually with an animated birthday cake. Enter your name and age to get a personalized birthday greeting — share it with friends and family!",
   metadataBase: new URL(BASE_URL),
@@ -30,17 +30,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Happy Birthday! 🎉🎂🎈",
+    title: "Animated Birthday Cake Card Maker | With Warm Wishes",
     description:
       "Celebrate birthdays virtually with an animated birthday cake. Enter your name and age to get a personalized birthday greeting — share it with friends and family!",
     url: BASE_URL,
-    siteName: "Birthday Celebration",
+    siteName: "With Warm Wishes",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Happy Birthday! 🎉🎂🎈",
+    title: "Animated Birthday Cake Card Maker | With Warm Wishes",
     description:
       "Celebrate birthdays virtually with an animated birthday cake. Enter your name and age to get a personalized birthday greeting!",
   },
