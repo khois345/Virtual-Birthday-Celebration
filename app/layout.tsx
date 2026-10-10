@@ -49,6 +49,14 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "With Warm Wishes",
+  alternateName: "withwarmwishes.com",
+  url: `${BASE_URL}/`,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,6 +69,11 @@ export default function RootLayout({
       bg-neutral-800`}
         suppressHydrationWarning
       >
+        {/* Tells Google to show "With Warm Wishes" as the site name in search results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <Suspense>
           <UserProvider>
             <ToastContainer />
