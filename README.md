@@ -73,7 +73,7 @@ npm run start
 
 - Sessions are stored in the `birthday-app` database.
 - Session records live in the `birthday_sessions` collection.
-- Sessions expire after 3 days.
+- Sessions expire after 7 days.
 - The API limits a device to 5 sessions per day.
 
 ## Inspiration
