@@ -1,13 +1,41 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
-import { randomUUID } from "crypto";
+import { randomInt } from "crypto";
 import clientPromise from "@/lib/mongodb";
 
 const DB_NAME = "birthday-app";
 const COLLECTION_NAME = "birthday_sessions";
 const DEFAULT_REGARD = "Wish you a wonderful birthday!";
 const MAX_SESSIONS_PER_DAY = 5;
-const SESSION_EXPIRY_DAYS = 3;
+const SESSION_EXPIRY_DAYS = 7;
+const SESSION_ID_LENGTH = 8;
+const SESSION_ID_ALPHABET =
+  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+const MAX_SESSION_ID_ATTEMPTS = 5;
+
+function generateSessionId(): string {
+  let id = "";
+  for (let i = 0; i < SESSION_ID_LENGTH; i++) {
+    id += SESSION_ID_ALPHABET[randomInt(SESSION_ID_ALPHABET.length)];
+  }
+  return id;
+}
+
+// Short IDs keep share links compact; retry on the rare collision
+async function generateUniqueSessionId(db: any): Promise<string> {
+  for (let attempt = 0; attempt < MAX_SESSION_ID_ATTEMPTS; attempt++) {
+    const sessionId = generateSessionId();
+    const existing = await db
+      .collection(COLLECTION_NAME)
+      .findOne({ sessionId }, { projection: { _id: 1 } });
+
+    if (!existing) {
+      return sessionId;
+    }
+  }
+
+  throw new Error("Failed to generate a unique session ID");
+}
 
 function getExpiryDate() {
   const expiresAt = new Date();
@@ -128,7 +156,7 @@ export async function POST(request: Request) {
   }
 
   // Always generate a new sessionId
-  const sessionId = randomUUID();
+  const sessionId = await generateUniqueSessionId(db);
   const expiresAt = getExpiryDate();
 
   await db.collection(COLLECTION_NAME).insertOne({
